@@ -84,7 +84,7 @@ Environment Variables
 Each service uses the following environment variables:
 
 PORT=8080
-MONGO_URI=mongodb+srv://paniroisakurai_db_user:Jb2yfCOP112zrmPN@cluster0.4rornyq.mongodb.net/?retryWrites=true&w=majority
+MONGO_URI=YOUR_MONGO_URI
 DB_NAME=YOUR_DB_NAME
 
 For local Docker testing, use:
@@ -409,7 +409,7 @@ Run User Service
 docker run --rm \
   -p 8081:8080 \
   -e PORT=8080 \
-  -e MONGO_URI="mongodb+srv://paniroisakurai_db_user:Jb2yfCOP112zrmPN@cluster0.4rornyq.mongodb.net/?retryWrites=true&w=majority \
+  -e MONGO_URI="YOUR_MONGO_URI \
   -e DB_NAME=YOUR_DB_NAME \
   user-service
 ```
@@ -418,7 +418,7 @@ Run Product Service
 docker run --rm \
   -p 8082:8080 \
   -e PORT=8080 \
-  -e MONGO_URI="mongodb+srv://paniroisakurai_db_user:Jb2yfCOP112zrmPN@cluster0.4rornyq.mongodb.net/?retryWrites=true&w=majority \
+  -e MONGO_URI="YOUR_MONGO_URI \
   -e DB_NAME=YOUR_DB_NAME \
   product-service
 ```
@@ -427,7 +427,7 @@ Run Order Service
 docker run --rm \
   -p 8083:8080 \
   -e PORT=8080 \
-  -e MONGO_URI="mongodb+srv://paniroisakurai_db_user:Jb2yfCOP112zrmPN@cluster0.4rornyq.mongodb.net/?retryWrites=true&w=majority \
+  -e MONGO_URI="YOUR_MONGO_URI \
   -e DB_NAME=YOUR_DB_NAME \
   order-service
   ```
